@@ -1,0 +1,8 @@
+ServerFiles/config
+ServerFiles/defaultconfigs
+ServerFiles/world
+ServerFiles/logs
+*.env
+*.txt
+*.json
+*.properties
