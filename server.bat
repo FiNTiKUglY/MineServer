@@ -2,6 +2,7 @@
 chcp 65001 >nul
 title Minecraft Server Setup
 color 0A
+cd ./ServerFiles/
 
 :menu
 echo ============================================
@@ -23,17 +24,17 @@ goto menu
 
 :update
 echo 🔄 Запуск update.bat...
-call ServerFiles/update.bat
+call update.bat
 goto menu
 
 :config
 echo 🔧 Запуск update_config.bat...
-call ServerFiles/update_config.bat
+call update_config.bat
 goto menu
 
 :run
 echo 🚀 Запуск run.bat...
-call ServerFiles/run.bat
+call run.bat
 goto menu
 
 :end
