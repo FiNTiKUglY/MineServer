@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 
 set "ZIP_FILE=repo.zip"
 set "EXTRACT_TO=./"
