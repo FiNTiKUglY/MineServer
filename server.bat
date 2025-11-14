@@ -23,17 +23,17 @@ goto menu
 
 :update
 echo 🔄 Запуск update.bat...
-call update.bat
+call ServerFiles/update.bat
 goto menu
 
 :config
 echo 🔧 Запуск update_config.bat...
-call update_config.bat
+call ServerFiles/update_config.bat
 goto menu
 
 :run
 echo 🚀 Запуск run.bat...
-call run.bat
+call ServerFiles/run.bat
 goto menu
 
 :end
