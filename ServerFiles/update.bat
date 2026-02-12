@@ -20,11 +20,12 @@ if not exist "%EXTRACT_TO%" (
     mkdir "%EXTRACT_TO%"
 )
 
-powershell -nologo -noprofile -command ^
-    "Expand-Archive -Path '%ZIP_FILE%' -DestinationPath '%EXTRACT_TO%' -Force"
+echo Unpacking zip...
+tar -xf "%ZIP_FILE%" -C "%EXTRACT_TO%"
 if errorlevel 1 (
     exit /b 1
 )
+echo Unpacking done
 
 xcopy "%INNER_DIR%\*" "%EXTRACT_TO%\" /E /H /Y >nul
 rd /s /q "%INNER_DIR%"
