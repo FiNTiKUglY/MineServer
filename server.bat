@@ -23,17 +23,17 @@ if errorlevel 1 goto update
 goto menu
 
 :update
-echo 🔄 Запуск update.bat...
+echo Запуск update.bat...
 call update.bat
 goto menu
 
 :config
-echo 🔧 Запуск update_config.bat...
+echo Запуск update_config.bat...
 call update_config.bat
 goto menu
 
 :run
-echo 🚀 Запуск run.bat...
+echo Запуск run.bat...
 call run.bat
 goto menu
 
