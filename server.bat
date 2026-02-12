@@ -5,13 +5,13 @@ cd ./ServerFiles/
 
 :menu
 echo ============================================
-echo           ⚙️  SERVER INSTALLATION
+echo            SERVER INSTALLATION
 echo ============================================
 echo.
-echo Выберите действие:
+echo Choose action:
 echo   1 - Download and update (update.bat)
 echo   2 - Update server`s config files (update_config.bat)
-echo   3 - run server (run.bat)
+echo   3 - Run server (run.bat)
 echo   4 - close app
 
 choice /c 1234 /n
